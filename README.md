@@ -1,55 +1,16 @@
 # Racxob
 
-*TODO: Project description*
+## Usage
 
-## Table of Contents
+(be sure to replace PROJECT_NAME with your project name)
 
-- [Stack](#stack)
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Seeded Logins](#seeded-logins)
-
-## Stack
-
-- Rails - ~> 5.2.1
-- Ruby - 2.4.2
-- PostgreSQL
-
-## Getting Started
-
-### Prerequisites
-
-If you haven't installed ruby, bundler, postgresql, selenium-webdriver, and chromedriver do that first. 
-
-```sh
-brew cask install chromedriver
-brew cask install selenium-webdriver
-brew cask install postgresql
-```
-
-### Installation
-Then, do the following to set up this app:
-
-```sh
-git clone <REPO_URL>
-cd <APP_DIR>
-bundle install
-cp .env.example .env
-bundle exec rails db:setup
-```
-
-### Usage
-
-To run the app locally:
-```sh
-bundle exec foreman start
-```
-Or run two sepearate processes for `bundle exec rails s` and `bin/webpack-dev-server`
-
-Then navigate to http://localhost:3000
-
-### Seeded logins
-
-For a list of credentials you can use to log into the app, check [the seeds file](db/seeds.rb).
-These logins are created via `rails db:setup` above.
+- `git clone git@github.com:smashingboxes/racxob.git PROJECT_NAME`
+- `cd PROJECT_NAME`
+- `rm -rf .git` (to delete this template history from the project)
+- Find all instances of `racxob` (case insensitive) and replace with your project name
+- `rm README.md`
+- `mv README.template.md README.md`
+- Fill in readme
+- `git init`
+- `git add .`
+- `git commit -am "Initial commit"`
