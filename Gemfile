@@ -19,7 +19,6 @@ gem "flipper-ui"
 gem "mailgun-ruby"
 gem "pg", "~> 1.0.0"
 gem "puma", "~> 3.7"
-gem "taperole", "~> 2.0"
 gem "webpacker", "~> 3.5"
 
 group :development, :test do
