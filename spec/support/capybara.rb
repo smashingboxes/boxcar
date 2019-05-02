@@ -1,23 +1,20 @@
 # frozen_string_literal: true
 
+require "webdrivers"
+
 Capybara.register_driver :headless_chrome do |app|
-  options = Selenium::WebDriver::Chrome::Options.new(
-    args: %w[--no-sandbox --headless --disable-gpu --disable-dev-shm-usage]
+  capabilities = Selenium::WebDriver::Remote::Capabilities.chrome(
+    chromeOptions: { args: %w[headless disable-gpu] }
   )
-  Selenium::WebDriver::Chrome.driver_path = `which chromedriver`.chomp
-  Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
+  Capybara::Selenium::Driver.new(app, browser: :chrome, desired_capabilities: capabilities)
 end
 
-# Change this to :chrome to open a local browser
-Capybara.javascript_driver = :headless_chrome
-
-# We need to override the default rspec-rails behavior to use our driver
 RSpec.configure do |config|
-  config.before(:each, type: :system) do
-    driven_by :rack_test
+  config.include Capybara::DSL
+  config.after do
+    Capybara.reset_sessions!
   end
-
-  config.before(:each, type: :system, js: true) do
-    driven_by(:headless_chrome)
+  config.before(:each, type: :system) do
+    driven_by :headless_chrome
   end
 end

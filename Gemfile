@@ -54,4 +54,5 @@ end
 
 group :test do
   gem "capybara-selenium"
+  gem "webdrivers"
 end

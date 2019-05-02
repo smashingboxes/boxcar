@@ -335,6 +335,10 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
+    webdrivers (3.8.0)
+      nokogiri (~> 1.6)
+      rubyzip (~> 1.0)
+      selenium-webdriver (~> 3.0)
     webpacker (3.6.0)
       activesupport (>= 4.2)
       rack-proxy (>= 0.6.1)
@@ -382,6 +386,7 @@ DEPENDENCIES
   simplecov
   taperole (~> 2.0)
   web-console (>= 3.3.0)
+  webdrivers
   webpacker (~> 3.5)
 
 RUBY VERSION
