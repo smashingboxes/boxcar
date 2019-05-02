@@ -1,0 +1,25 @@
+!.keep
+*.DS_Store
+*.swo
+*.swp
+.tape
+.byebug_history
+/.bundle
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/log/*
+/node_modules
+/public/docs
+/tmp/*
+/yarn-error.log
+ER_Model.pdf
+spec/rspec_examples.txt
+.env
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+/public/packs
+/public/packs-test
+/node_modules
+yarn-debug.log*
+.yarn-integrity

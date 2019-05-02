@@ -1,0 +1,16 @@
+.l-container {
+  flex: 1;
+  padding: var(--spacing-xxs);
+
+  @media screen and (min-width: 450px) {
+    padding: var(--spacing-xs);
+  }
+
+  @media screen and (min-width: 1000px) {
+    padding: var(--spacing-sm);
+  }
+}
+
+.l-container--centered {
+  margin: 0 auto;
+}

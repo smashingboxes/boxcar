@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: racxob_development
+
+test:
+  <<: *default
+  database: racxob_test
+
+production:
+  <<: *default
+  database: racxob_production
+  username: racxob
+  password: <%= ENV['RACXOB_DATABASE_PASSWORD'] %>
