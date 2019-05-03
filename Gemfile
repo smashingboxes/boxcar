@@ -11,8 +11,8 @@ ruby "2.4.2"
 
 gem "rails", "~> 5.2.1"
 
-gem "activeadmin"
 gem "active_interaction", "~> 3.7"
+gem "activeadmin"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "flipper"
 gem "flipper-active_record"
