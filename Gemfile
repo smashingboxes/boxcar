@@ -13,6 +13,7 @@ gem "rails", "~> 5.2.1"
 
 gem "active_interaction", "~> 3.7"
 gem "activeadmin"
+gem "airbrake", "~> 9.2"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "flipper"
 gem "flipper-active_record"
