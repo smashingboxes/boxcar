@@ -22,7 +22,7 @@ gem "mailgun-ruby", "~> 1.1"
 gem "pg", "~> 1.1.0"
 gem "puma", "~> 3.7"
 gem "uglifier", "~> 4.1"
-gem "webpacker", "~> 3.5"
+gem "webpacker", "~> 4.0"
 
 group :development, :test do
   gem "annotate"
