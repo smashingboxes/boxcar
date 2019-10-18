@@ -1,4 +1,4 @@
-# Racxob
+# PROJECT_TITLE
 
 *TODO: Project description*
 
@@ -20,7 +20,7 @@
 
 ### Prerequisites
 
-If you haven't installed ruby, bundler, postgresql, selenium-webdriver, and chromedriver do that first. 
+If you haven't installed ruby, bundler, postgresql, selenium-webdriver, and chromedriver do that first.
 
 ```sh
 brew cask install chromedriver

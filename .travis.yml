@@ -7,7 +7,7 @@ services:
   - postgresql
 addons:
   chrome: stable
-cache: 
+cache:
   bundler: true
   directories:
     - node_modules
@@ -20,7 +20,7 @@ before_script:
   - export DISPLAY=:99.0
   - sleep 3
   - cp .env.example .env
-  - psql -c 'create database racxob_test;' -U postgres
+  - psql -c 'create database boxcar_test;' -U postgres
   - bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare --trace
 script:
