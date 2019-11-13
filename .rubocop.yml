@@ -170,3 +170,10 @@ RSpec/NamedSubject:
 # Reason: Team preference
 RSpec/NotToNot:
   EnforcedStyle: to_not
+  
+  
+# Reason: False positive. This cop doesn't apply to anything in the factories directory
+RSpec/Focus:
+  Exclude:
+    - spec/factories/**/*
+
