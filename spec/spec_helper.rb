@@ -1,28 +1,6 @@
 # frozen_string_literal: true
 
 RSpec.configure do |config|
-  config.after(:each, type: :controller) do
-    SmashingDocs.run!(request, response, true)
-  end
-  # This is intentionally commented out. SmashingDocs will uncomment
-  # it when running `rails g docs:build_docs`
-  # config.after(:suite) { SmashingDocs.finish! }
-  config.after(:suite) do
-    examples = RSpec.world.filtered_examples.values.flatten
-    after_hooks = [
-      "bundle exec rubocop",
-      "brakeman -q -w2 -z --no-summary",
-      "bundle-audit --update"
-    ]
-    if examples.none?(&:exception) && ENV["DISABLE_POSTCHECKS"] != "true"
-      after_hooks.each do |hook_command|
-        system("echo ' ' && #{hook_command}")
-        exitstatus = $CHILD_STATUS.exitstatus
-        exit exitstatus if exitstatus.nonzero?
-      end
-    end
-  end
-
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end
