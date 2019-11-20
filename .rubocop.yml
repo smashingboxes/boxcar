@@ -118,6 +118,10 @@ Style/FormatStringToken:
 # Reason: Adding underscores to numbers doesn't always make sense. Eg: Time integers
 Style/NumericLiterals:
   Enabled: false
+  
+# Reason: Team preference. This results in subjectively messier code
+Style/ConditionalAssignments:
+  Enabled: false
 
 # ==================== Rails ====================
 
