@@ -17,18 +17,6 @@
         "internalConsoleOptions": "neverOpen",
         "disableOptimisticBPs": true
       },
-      // {
-      //     "type": "chrome",
-      //     "request": "attach",
-      //     "name": "Attach Frontend Debug",
-      //     "port": 9222,
-      //     "url": "http://localhost:3000",
-      //     "webRoot": "${workspaceFolder}/frontend/src",
-      //     "sourceMapPathOverrides": {
-      //       "webpack:///src/*": "${webRoot}/*"
-      //     },
-      //     "trace": true
-      // },
       {
         "name": "Launch Frontend Debug",
         "type": "chrome",
