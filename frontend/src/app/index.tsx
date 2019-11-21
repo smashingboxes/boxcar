@@ -4,7 +4,7 @@ import './App.scss';
 
 const App = () => {
   return (
-    <div onClick={} className="App">
+    <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
