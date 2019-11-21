@@ -7,7 +7,7 @@ services:
   - postgresql
 addons:
   chrome: stable
-cache: 
+cache:
   bundler: true
   directories:
     - node_modules
@@ -26,5 +26,7 @@ before_script:
 script:
   - bundle exec rubocop
   - bundle exec rspec
+  - bundle exec brakeman -q -w2 -z --no-summary
+  - bundle exec bundle-audit --update
   - yarn lint
   - yarn lint-frontend

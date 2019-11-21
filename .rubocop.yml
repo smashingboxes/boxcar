@@ -118,6 +118,10 @@ Style/FormatStringToken:
 # Reason: Adding underscores to numbers doesn't always make sense. Eg: Time integers
 Style/NumericLiterals:
   Enabled: false
+  
+# Reason: Team preference. This results in subjectively messier code
+Style/ConditionalAssignments:
+  Enabled: false
 
 # ==================== Rails ====================
 
@@ -170,3 +174,10 @@ RSpec/NamedSubject:
 # Reason: Team preference
 RSpec/NotToNot:
   EnforcedStyle: to_not
+  
+  
+# Reason: False positive. This cop doesn't apply to anything in the factories directory
+RSpec/Focus:
+  Exclude:
+    - spec/factories/**/*
+
