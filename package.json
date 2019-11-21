@@ -2,7 +2,7 @@
   "name": "racxob",
   "private": true,
   "scripts": {
-    "lint-frontend": "cd frontend && npm run lint",
+    "lint-frontend": "cd frontend && npm i && npm run lint",
     "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "stylelint 'app/**/*.css'",
     "lint:js": "eslint --format 'node_modules/eslint-friendly-formatter' --ext .js,.jsx ./app"
