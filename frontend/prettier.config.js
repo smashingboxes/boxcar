@@ -7,7 +7,7 @@ module.exports = {
   trailingComma: "all",
   overrides: [
     {
-      files: ".editorconfig",
+      files: "../.editorconfig",
       options: { parser: "yaml" },
     },
     {
