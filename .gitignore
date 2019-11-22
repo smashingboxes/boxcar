@@ -23,3 +23,5 @@ spec/rspec_examples.txt
 /node_modules
 yarn-debug.log*
 .yarn-integrity
+/frontend/node_modules
+/frontend/build

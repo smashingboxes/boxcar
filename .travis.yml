@@ -29,3 +29,4 @@ script:
   - bundle exec brakeman -q -w2 -z --no-summary
   - bundle exec bundle-audit --update
   - yarn lint
+  - yarn lint-frontend

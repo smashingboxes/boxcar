@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "name": "Debug Frontend Tests",
+        "request": "launch",
+        "runtimeExecutable": "${workspaceFolder}/frontend//node_modules/.bin/react-scripts",
+        "cwd": "${workspaceRoot}/frontend/",
+        "args": [
+          "test",
+          "--env=jsdom",
+          "--runInBand"
+        ],
+        "console": "integratedTerminal",
+        "protocol": "inspector",
+        "internalConsoleOptions": "neverOpen",
+        "disableOptimisticBPs": true
+      },
+      {
+        "name": "Launch Frontend Debug",
+        "type": "chrome",
+        "request": "launch",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceFolder}/frontend/src",
+        "sourceMapPathOverrides": {
+          "webpack:///src/*": "${webRoot}/*"
+        }
+      }
+    ]
+  }

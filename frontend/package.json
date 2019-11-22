@@ -1,0 +1,59 @@
+{
+  "name": "boxcar-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "analyze": "node ./scripts/analyze-bundle-size.js",
+    "test": "react-scripts test",
+    "lint": "eslint --format 'node_modules/eslint-friendly-formatter' --ext .ts,.tsx ./src"
+  },
+  "dependencies": {
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/gtag.js": "0.0.3",
+    "@types/jest": "24.0.23",
+    "@types/node": "12.12.7",
+    "@types/react": "16.9.11",
+    "@types/react-dom": "16.9.4",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-typescript": "^6.3.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-eslint-comments": "^3.1.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^23.0.4",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "prettier": "^1.19.1",
+    "progress-bar-webpack-plugin": "^1.12.1",
+    "react-scripts": "3.2.0",
+    "typescript": "3.7.2",
+    "webpack-bundle-analyzer": "^3.6.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb-typescript"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

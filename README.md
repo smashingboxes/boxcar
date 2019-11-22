@@ -1,4 +1,4 @@
-# Racxob
+# Boxcar
 
 ## Usage
 
@@ -6,7 +6,7 @@
 
 - Generate a repo based on this one (Click "Use this template" above)
 - In the new repo, do the following:
-  - Find all instances of `racxob` (case insensitive) and replace with your project name
+  - Find all instances of `boxcar` (case insensitive) and replace with your project name
   - `rm README.md`
   - `mv README.template.md README.md`
   - Fill in readme
