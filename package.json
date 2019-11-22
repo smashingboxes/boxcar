@@ -1,5 +1,5 @@
 {
-  "name": "racxob",
+  "name": "boxcar",
   "private": true,
   "scripts": {
     "lint-frontend": "cd frontend && npm i && npm run lint",

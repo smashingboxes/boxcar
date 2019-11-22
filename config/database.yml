@@ -5,14 +5,14 @@ default: &default
 
 development:
   <<: *default
-  database: racxob_development
+  database: boxcar_development
 
 test:
   <<: *default
-  database: racxob_test
+  database: boxcar_test
 
 production:
   <<: *default
-  database: racxob_production
-  username: racxob
-  password: <%= ENV['RACXOB_DATABASE_PASSWORD'] %>
+  database: boxcar_production
+  username: boxcar
+  password: <%= ENV['BOXCAR_DATABASE_PASSWORD'] %>
