@@ -66,7 +66,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "racxob_#{Rails.env}"
+  # config.active_job.queue_name_prefix = "boxcar_#{Rails.env}"
 
   config.action_mailer.default_url_options = {
     host: Rails.application.secrets.mailgun_domain

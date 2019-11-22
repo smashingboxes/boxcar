@@ -1,5 +1,5 @@
 {
-  "name": "racxob",
+  "name": "boxcar",
   "private": true,
   "scripts": {
     "lint": "npm run lint:css && npm run lint:js",
