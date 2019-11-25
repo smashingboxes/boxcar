@@ -122,6 +122,14 @@ Style/NumericLiterals:
 # Reason: Team preference. This results in subjectively messier code
 Style/ConditionalAssignments:
   Enabled: false
+  
+# Reason: Team preference
+Style/WordArray:
+  Enabled: false
+  
+# Reason: Team preference
+Style/SymbolArray:
+  Enabled: false
 
 # ==================== Rails ====================
 
