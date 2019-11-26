@@ -7,9 +7,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby "2.4.2"
+ruby "2.6.3"
 
-gem "rails", "~> 5.2.1"
+gem "rails", "~> 6.0.0"
 
 gem "active_interaction", "~> 3.7"
 gem "activeadmin"
@@ -21,6 +21,8 @@ gem "flipper-ui", "~> 0.16"
 gem "mailgun-ruby", "~> 1.1"
 gem "pg", "~> 1.1.0"
 gem "puma", "~> 3.7"
+gem 'rubocop-performance'
+gem 'sassc'
 gem "uglifier", "~> 4.1"
 gem "webpacker", "~> 3.5"
 
