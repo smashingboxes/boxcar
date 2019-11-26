@@ -9,7 +9,7 @@
 /db/*.sqlite3-journal
 /log/*
 /node_modules
-/public/docs
+/public/*
 /tmp/*
 /yarn-error.log
 spec/rspec_examples.txt
