@@ -56,7 +56,14 @@ These logins are created via `rails db:setup` above.
 
 ### Bundle Audit
 
-If you run into an error in the specs relating to bundle-audit, giving a solution line like 
-Solution: upgrade to ~> 5.0.0.beta1.1, ~> 4.2.5.1, ~> 4.1.14.1, ~> 3.2.22.1, you need to run 
-`bundle exec bundle-audit --update`. If this doesn't work, you'll need to manually update the 
-gem (e.g. `bundle update nokogiri`) and commit the changes.
+### Bundle Audit
+
+[Bundle Audit](https://github.com/rubysec/bundler-audit) is a tool that enforces that we upgrade
+our dependencies if they have vulnerabilities. We have it configured to run as part of our CI/CD
+process. It checks all of the gem versions in `Gemfile.lock` against an online database of known
+vulnerabilities and if it finds any it prints them out and errors.
+
+If you run into an error in CI/CD relating to bundle-audit, take a look at the "Solution:" line.
+Most of the time, the fix is simply to update the gem, which you can do with
+`bundle update whatevergem`.
+
