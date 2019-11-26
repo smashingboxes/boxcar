@@ -19,7 +19,10 @@ AllCops:
     - tmp/*
     # Reason: Node modules isn't ruby code
     - node_modules/**/*
+    # Reason: Don't need to lint vendor (library) code
     - vendor/bundle/**/*
+    # Reason: Don't need to lint the frontend with rubocop
+    - frontend/**/*
   UseCache: false
 
 # ==================== Layout ====================
@@ -118,15 +121,15 @@ Style/FormatStringToken:
 # Reason: Adding underscores to numbers doesn't always make sense. Eg: Time integers
 Style/NumericLiterals:
   Enabled: false
-  
+
 # Reason: Team preference. This results in subjectively messier code
 Style/ConditionalAssignments:
   Enabled: false
-  
+
 # Reason: Team preference
 Style/WordArray:
   Enabled: false
-  
+
 # Reason: Team preference
 Style/SymbolArray:
   Enabled: false
@@ -182,10 +185,9 @@ RSpec/NamedSubject:
 # Reason: Team preference
 RSpec/NotToNot:
   EnforcedStyle: to_not
-  
-  
+
+
 # Reason: False positive. This cop doesn't apply to anything in the factories directory
 RSpec/Focus:
   Exclude:
     - spec/factories/**/*
-
