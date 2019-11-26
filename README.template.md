@@ -53,3 +53,7 @@ Then navigate to http://localhost:3000
 
 For a list of credentials you can use to log into the app, check [the seeds file](db/seeds.rb).
 These logins are created via `rails db:setup` above.
+
+### Bundle Audit
+
+If you run into an error in the specs relating to bundle-audit, giving a solution line like Solution: upgrade to ~> 5.0.0.beta1.1, ~> 4.2.5.1, ~> 4.1.14.1, ~> 3.2.22.1, you need to run `bundle exec bundle-audit --update`. If this doesn't work, you'll need to manually update the gem (e.g. `bundle update nokogiri`) and commit the changes.
