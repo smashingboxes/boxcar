@@ -123,7 +123,7 @@ Style/NumericLiterals:
   Enabled: false
 
 # Reason: Team preference. This results in subjectively messier code
-Style/ConditionalAssignments:
+Style/ConditionalAssignment:
   Enabled: false
 
 # Reason: Team preference
