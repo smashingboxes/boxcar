@@ -29,4 +29,5 @@ export default React.memo((props: AppComponentProps) => {
       }
       </header>
     </div>
-)})
+  )
+})
