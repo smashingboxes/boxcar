@@ -1,8 +1,8 @@
 import { Reducer } from "redux"
-import { Auth } from "../../types"
+import { AuthenticationState } from "../../types"
 import * as actionTypes from "./action-types"
 
-const initialState: Auth = ({
+const initialState: AuthenticationState = ({
     is_refreshing: false,
     auth_token: "",
     refresh_token: "",
@@ -11,7 +11,7 @@ const initialState: Auth = ({
 
 type ValidActions = actionTypes.UpdateAuthAction
 
-export const authReducer: Reducer<Auth, ValidActions> = (state = initialState, action): Auth => {
+export const authReducer: Reducer<AuthenticationState, ValidActions> = (state = initialState, action): AuthenticationState => {
     switch (action.type) {
         case(actionTypes.UPDATE_AUTH):
         return { ...state, ...action.payload}

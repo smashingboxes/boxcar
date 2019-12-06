@@ -1,10 +1,10 @@
 import { Dispatch } from "redux"
 
-import { Auth } from "../../types"
+import { AuthenticationState } from "../../types"
 import { UpdateAuthAction, UPDATE_AUTH } from "./action-types"
 
 
-export function updateAuth(auth: Auth): UpdateAuthAction {
+export function updateAuth(auth: AuthenticationState): UpdateAuthAction {
     return {
         type: UPDATE_AUTH,
         payload: auth
@@ -12,7 +12,7 @@ export function updateAuth(auth: Auth): UpdateAuthAction {
 }
 
 // dummy function stubbing out a login call for now
-async function loginApiCall(email: string, password: string): Promise<Auth> {
+async function loginApiCall(email: string, password: string): Promise<AuthenticationState> {
   return {
     is_refreshing: false,
     auth_token: email,
@@ -22,10 +22,10 @@ async function loginApiCall(email: string, password: string): Promise<Auth> {
 }
 
 export function logIn(email: string, password: string) {
-  return async (dispatch: Dispatch): Promise<Auth> => {
+  return async (dispatch: Dispatch): Promise<AuthenticationState> => {
       try {
           const authResponse = await loginApiCall(email, password)
-          dispatch<UpdateAuthAction>(updateAuth(authResponse))
+          dispatch(updateAuth(authResponse))
           return Promise.resolve(authResponse)
       } catch (error) {
           return Promise.reject(error)
