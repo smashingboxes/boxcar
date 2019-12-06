@@ -5,7 +5,9 @@
     "lint-frontend": "cd frontend && npm i && npm run lint",
     "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "stylelint 'app/**/*.css'",
-    "lint:js": "eslint --format 'node_modules/eslint-friendly-formatter' --ext .js,.jsx ./app"
+    "lint:js": "eslint --format 'node_modules/eslint-friendly-formatter' --ext .js,.jsx ./app",
+    "build": "cd frontend && npm run build && cd .. && mkdir -p public && mv frontend/build/* public",
+    "clean": "rm -rf public/*"
   },
   "dependencies": {
     "@rails/webpacker": "3.5",

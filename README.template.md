@@ -53,3 +53,17 @@ Then navigate to http://localhost:3000
 
 For a list of credentials you can use to log into the app, check [the seeds file](db/seeds.rb).
 These logins are created via `rails db:setup` above.
+
+### Bundle Audit
+
+### Bundle Audit
+
+[Bundle Audit](https://github.com/rubysec/bundler-audit) is a tool that enforces that we upgrade
+our dependencies if they have vulnerabilities. We have it configured to run as part of our CI/CD
+process. It checks all of the gem versions in `Gemfile.lock` against an online database of known
+vulnerabilities and if it finds any it prints them out and errors.
+
+If you run into an error in CI/CD relating to bundle-audit, take a look at the "Solution:" line.
+Most of the time, the fix is simply to update the gem, which you can do with
+`bundle update whatevergem`.
+

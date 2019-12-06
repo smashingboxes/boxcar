@@ -1,5 +1,11 @@
 # Boxcar
 
+## ERD
+
+(Below is an example PDF - it will auto update as you migrate - delete this comment!)
+
+View PROJECT_NAME ERD [here](./ER_Model.pdf)
+
 ## Usage
 
 (be sure to replace PROJECT_NAME with your project name)

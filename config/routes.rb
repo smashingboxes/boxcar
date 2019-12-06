@@ -7,4 +7,10 @@ Rails.application.routes.draw do
   if Rails.env.development?
     mount Flipper::UI.app(Flipper), at: "/flipper"
   end
+
+  get "*path", to: "application#frontend", constraints: ->(request) { frontend_request?(request) }
+
+  def frontend_request?(request)
+    !request.xhr? && request.format.html?
+  end
 end
