@@ -1,7 +1,7 @@
 ## Why?
 - :notebook: https://smashingboxes.atlassian.net/browse/###-###
 
-## What Changes?
+## Summary of Changes
 - List changes here
 
 ### Screenshots (if applicable)
