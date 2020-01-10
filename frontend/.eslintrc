@@ -29,6 +29,10 @@
     "plugins": ["react", "@typescript-eslint", "eslint-comments", "promise", "react-hooks"],
     "rules": {
       "no-console": 2,
-      "@typescript-eslint/explicit-function-return-type": 2
+      "import/prefer-default-export": 0,
+      "@typescript-eslint/no-empty-interface": 0,
+      "@typescript-eslint/explicit-function-return-type": 2,
+      "indent": ["error"],
+      "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
     }
   }
