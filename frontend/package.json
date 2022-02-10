@@ -10,7 +10,7 @@
     "lint": "eslint --format 'node_modules/eslint-friendly-formatter' --ext .ts,.tsx ./src"
   },
   "dependencies": {
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.1.3",
